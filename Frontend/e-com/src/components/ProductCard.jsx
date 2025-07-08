@@ -2,18 +2,22 @@ import React from "react";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="border rounded-md p-4 shadow hover:shadow-lg transition duration-200">
+    <div className="bg-zinc-950 border border-zinc-700 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 hover:shadow-purple-500/30">
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-48 object-cover rounded mb-3"
+        className="w-full h-52 object-cover"
       />
-      <h2 className="text-xl font-semibold">{product.name}</h2>
-      <p className="text-gray-600">{product.description}</p>
-      <p className="text-lg font-bold mt-2">₹{product.price}</p>
-      <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-        Add to Cart
-      </button>
+      <div className="p-4">
+        <h2 className="text-xl font-bold text-purple-400">{product.name}</h2>
+        <p className="text-sm text-gray-400 mt-1">{product.description}</p>
+        <div className="mt-4 flex items-center justify-between">
+          <span className="text-lg font-semibold text-green-400">₹{product.price}</span>
+          <button className="px-4 py-1 bg-purple-700 text-white rounded hover:bg-purple-800 transition">
+            Add to Cart
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
