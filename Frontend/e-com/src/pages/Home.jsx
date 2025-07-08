@@ -123,7 +123,7 @@ const Home = () => {
     
      <section id="contact" className="px-6 py-16 bg-zinc-800 text-white">
   <div className="max-w-5xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-purple-400 mb-6">About LocalMart</h2>
+    <h2 className="text-4xl font-bold text-purple-400 mb-6">About GullyMart</h2>
     <p className="text-gray-300 text-lg mb-4">
       LocalMart is more than just a shopping platform — it's a movement. Born in the heart of <strong>Your City</strong>,
       our mission is to uplift the talented hands and creative minds behind the products you love.

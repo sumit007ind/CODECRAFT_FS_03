@@ -8,10 +8,10 @@ const Navbar = () => {
     <nav className="bg-zinc-900  backdrop-blur-md text-white px-6 py-4 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold text-purple-400">
-          LocalMart 🛒
+          GullyMart 🛒
         </Link>
 
-        <div className="hidden md:flex gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
           <Link to="/" className="hover:text-purple-400">Home</Link>
           <Link to="/cart" className="hover:text-purple-400">Cart</Link>
           <Link to="/checkout" className="hover:text-purple-400">Checkout</Link>
@@ -33,7 +33,8 @@ const Navbar = () => {
           <Link to="/" className="hover:text-purple-400">Home</Link>
           <Link to="/cart" className="hover:text-purple-400">Cart</Link>
           <Link to="/checkout" className="hover:text-purple-400">Checkout</Link>
-          <Link to="#contact" className="hover:text-purple-400">Contact</Link>
+         <Link to="/contact" className="text-white hover:text-purple-400">Contact</Link>
+
         </div>
       )}
     </nav>
