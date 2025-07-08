@@ -2,6 +2,7 @@ import React from "react";
 import ProductCard from "../components/ProductCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SliderSection from "../components/SliderSection";
 
 const dummyProducts = [
   {
@@ -98,19 +99,21 @@ const Home = () => {
           Local shopping supports small businesses, reduces environmental impact, and keeps your community thriving.
         </p>
       </section>
+      <SliderSection />
+
 
       <section className="px-6 py-12 bg-zinc-900 text-white text-center">
         <h2 className="text-3xl font-bold text-purple-400 mb-6">What Our Customers Say</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <blockquote className="bg-zinc-800 p-4 rounded shadow">
+        <div className="grid md:grid-cols-3 gap-6 ">
+          <blockquote className="bg-zinc-800 p-4 rounded shadow hover:scale-105 transition-all duration-300 hover:shadow-purple-700/50    gap-6">
             <p className="italic">"Super fast delivery and the products are 100% genuine."</p>
             <footer className="mt-2 text-purple-300">- Priya S.</footer>
           </blockquote>
-          <blockquote className="bg-zinc-800 p-4 rounded shadow">
+          <blockquote className="bg-zinc-800 p-4 rounded shadow hover:scale-105 transition-all duration-300 hover:shadow-purple-700/50    gap-6">
             <p className="italic">"Love supporting local artisans. The soap smells amazing!"</p>
             <footer className="mt-2 text-purple-300">- Aarav K.</footer>
           </blockquote>
-          <blockquote className="bg-zinc-800 p-4 rounded shadow">
+          <blockquote className="bg-zinc-800 p-4 rounded shadow hover:scale-105 transition-all duration-300 hover:shadow-purple-700/50    gap-6">
             <p className="italic">"Finally a marketplace for local products. Great job!"</p>
             <footer className="mt-2 text-purple-300">- Meena R.</footer>
           </blockquote>
@@ -118,12 +121,27 @@ const Home = () => {
       </section>
 
     
-      <section id="contact" className="px-6 py-12 bg-zinc-800 text-white text-center">
-        <h2 className="text-3xl font-bold text-purple-400 mb-4">About LocalMart</h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          We are a community-driven platform helping small businesses thrive in the digital age. Based in [Your City], we focus on quality, sustainability, and local pride.
-        </p>
-      </section>
+     <section id="contact" className="px-6 py-16 bg-zinc-800 text-white">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-purple-400 mb-6">About LocalMart</h2>
+    <p className="text-gray-300 text-lg mb-4">
+      LocalMart is more than just a shopping platform — it's a movement. Born in the heart of <strong>Your City</strong>,
+      our mission is to uplift the talented hands and creative minds behind the products you love.
+    </p>
+    <p className="text-gray-400 mb-4">
+      Every item you see here is handcrafted, grown, or built by someone in your neighborhood. We're making e-commerce
+      more personal by giving a platform to farmers, artists, small shopkeepers, and local creators.
+    </p>
+    <p className="text-gray-400 mb-4">
+      With secure checkout, fast local delivery, and real human connection, LocalMart combines the convenience of
+      online shopping with the heart of a local bazaar.
+    </p>
+    <p className="text-purple-300 font-semibold">
+      Join us in supporting local dreams. 💜
+    </p>
+  </div>
+</section>
+
 
       
       <section className="px-6 py-12 bg-purple-700 text-white text-center">
